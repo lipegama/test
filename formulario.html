@@ -1,0 +1,89 @@
+formulario.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples</title>
+</head>
+<body>
+    <h1 align="center">Formulário de Cadastro</h1>
+    
+    <form action="#" method="post">
+        <table border="0" width="80%" align="center" cellpadding="5">
+            <!-- Dados Pessoais -->
+            <tr>
+                <td colspan="2"><h3>Dados Pessoais</h3></td>
+            </tr>
+            <tr>
+                <td width="30%"><label for="nome">Nome Completo:</label></td>
+                <td><input type="text" id="nome" name="nome" size="50" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" size="50" required></td>
+            </tr>
+            <tr>
+                <td><label for="telefone">Telefone:</label></td>
+                <td><input type="tel" id="telefone" name="telefone" size="20"></td>
+            </tr>
+            
+            <!-- Endereço -->
+            <tr>
+                <td colspan="2"><h3>Endereço</h3></td>
+            </tr>
+            <tr>
+                <td><label for="cep">CEP:</label></td>
+                <td><input type="text" id="cep" name="cep" size="10"></td>
+            </tr>
+            <tr>
+                <td><label for="endereco">Endereço:</label></td>
+                <td><input type="text" id="endereco" name="endereco" size="50"></td>
+            </tr>
+            
+            <!-- Opções -->
+            <tr>
+                <td colspan="2"><h3>Preferências</h3></td>
+            </tr>
+            <tr>
+                <td><label>Interesses:</label></td>
+                <td>
+                    <input type="checkbox" id="tecnologia" name="interesse" value="tecnologia">
+                    <label for="tecnologia">Tecnologia</label>
+                    
+                    <input type="checkbox" id="esportes" name="interesse" value="esportes">
+                    <label for="esportes">Esportes</label>
+                    
+                    <input type="checkbox" id="musica" name="interesse" value="musica">
+                    <label for="musica">Música</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sexo">Sexo:</label></td>
+                <td>
+                    <select id="sexo" name="sexo">
+                        <option value="">Selecione...</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Mensagem -->
+            <tr>
+                <td><label for="mensagem">Mensagem:</label></td>
+                <td><textarea id="mensagem" name="mensagem" rows="4" cols="48"></textarea></td>
+            </tr>
+            
+            <!-- Botões -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
